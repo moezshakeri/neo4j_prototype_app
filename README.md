@@ -1,16 +1,10 @@
 # neo4j_prototype_app
 
-A new Flutter project.
+A Flutter GraphQL / Neo4j prototype project.
 
-## Getting Started
+### Important points
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- This prototype using a graphQL server on `http://localhost:4000`, you can change it in `lib/Helper/graphql_helper.dart`.
+- I used `graphql` package to connect and create a graphQL Client.
+- The `lib/Helper/graphql_helper.dart` class is a simple helper to create and return a graphQL client on each call. you can refactor it as a `Service` in your application.
+- Check `lib/screens/home_screen.dart` to see how we send requests and receive data.
